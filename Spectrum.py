@@ -644,4 +644,3 @@ def average(speclist : List[Spectrum], ns='composite', full_range=False) -> Spec
     d = {wl: (fl, err) for wl,fl,err in zip(wls,flux,error)}
 
     return Spectrum(dict=d, ns=ns)
-
