@@ -642,5 +642,4 @@ def average(speclist : List[Spectrum], ns='composite', full_range=False) -> Spec
     error = df.std(axis=1).values
     wls = df.index
     d = {wl: (fl, err) for wl,fl,err in zip(wls,flux,error)}
-
     return Spectrum(dict=d, ns=ns)
